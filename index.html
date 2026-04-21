@@ -1,97 +1,344 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سياسة الخصوصية - Minova</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سياسة الخصوصية - Minova</title>
+  <meta name="description" content="سياسة الخصوصية الخاصة بتطبيق Minova" />
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --primary: #1565c0;
+      --primary-dark: #0d47a1;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --success-bg: #eef7ff;
+    }
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.9;
+    }
 
-        h1 {
-            color: #1976D2;
-        }
+    .wrapper {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 24px;
+    }
 
-        h2 {
-            margin-top: 20px;
-            color: #333;
-        }
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #fff;
+      border-radius: 24px;
+      padding: 32px 24px;
+      box-shadow: 0 20px 50px rgba(21, 101, 192, 0.18);
+      margin-top: 28px;
+    }
 
-        p {
-            color: #555;
-            line-height: 1.8;
-        }
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 32px;
+    }
 
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            color: #999;
-        }
-    </style>
+    .hero p {
+      margin: 0;
+      color: rgba(255,255,255,0.92);
+      font-size: 16px;
+    }
+
+    .meta {
+      margin-top: 18px;
+      display: inline-block;
+      background: rgba(255,255,255,0.14);
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-size: 14px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 26px 22px;
+      margin-top: 22px;
+      box-shadow: 0 10px 30px rgba(17, 24, 39, 0.05);
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 22px;
+      color: var(--primary-dark);
+    }
+
+    h3 {
+      margin-top: 18px;
+      margin-bottom: 8px;
+      font-size: 18px;
+      color: var(--text);
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-right: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      background: var(--success-bg);
+      border: 1px solid #cfe5ff;
+      padding: 16px;
+      border-radius: 16px;
+    }
+
+    .contact-box {
+      background: #f8fafc;
+      border: 1px dashed #bfd4f5;
+      border-radius: 18px;
+      padding: 18px;
+      margin-top: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .button:hover {
+      background: var(--primary-dark);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 28px 0 38px;
+      font-size: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    @media (max-width: 768px) {
+      .wrapper {
+        padding: 16px;
+      }
+
+      .hero {
+        padding: 24px 18px;
+        border-radius: 18px;
+      }
+
+      .hero h1 {
+        font-size: 26px;
+      }
+
+      .card {
+        padding: 20px 16px;
+        border-radius: 18px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <div class="wrapper">
+    <section class="hero">
+      <h1>سياسة الخصوصية لتطبيق Minova</h1>
+      <p>
+        توضح هذه الصفحة كيفية جمع المعلومات واستخدامها وحمايتها عند استخدام تطبيق Minova.
+      </p>
+      <div class="meta">
+        آخر تحديث: 21 أبريل 2026
+      </div>
+    </section>
 
-<div class="container">
+    <section class="card">
+      <h2>1) من نحن</h2>
+      <p>
+        Minova هو تطبيق مخصص لإدارة البيانات المالية الشخصية مثل الزبائن، الموردين، الديون، الأقساط، والمدفوعات.
+      </p>
+      <p>
+        باستخدامك للتطبيق، فإنك توافق على الممارسات الموضحة في هذه الصفحة.
+      </p>
+    </section>
 
-    <h1>سياسة الخصوصية</h1>
+    <section class="card">
+      <h2>2) المعلومات التي قد نجمعها</h2>
+      <div class="grid">
+        <div>
+          <h3>معلومات الحساب</h3>
+          <ul>
+            <li>الاسم</li>
+            <li>البريد الإلكتروني</li>
+            <li>رقم الهاتف</li>
+            <li>بيانات تسجيل الدخول عند إنشاء الحساب</li>
+          </ul>
+        </div>
+        <div>
+          <h3>البيانات التي تدخلها داخل التطبيق</h3>
+          <ul>
+            <li>بيانات الزبائن والموردين</li>
+            <li>الديون والمعاملات والمدفوعات</li>
+            <li>الأقساط والملاحظات المرتبطة بها</li>
+            <li>أي معلومات تضيفها بنفسك داخل التطبيق</li>
+          </ul>
+        </div>
+      </div>
 
-    <p>نحن في تطبيق Minova نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية.</p>
+      <h3>معلومات فنية قد يتم جمعها تلقائياً</h3>
+      <ul>
+        <li>معلومات عامة عن الجهاز ونظام التشغيل</li>
+        <li>بيانات مرتبطة بتحسين الأداء والأمان</li>
+        <li>بيانات اتصال أساسية عند استخدام الإنترنت أو المزامنة</li>
+      </ul>
+    </section>
 
-    <h2>المعلومات التي نجمعها</h2>
-    <p>
-        قد نقوم بجمع المعلومات التالية:
-        <br>• الاسم
-        <br>• رقم الهاتف
-        <br>• البريد الإلكتروني
-        <br>• بيانات الديون والمعاملات داخل التطبيق
-    </p>
+    <section class="card">
+      <h2>3) كيف نستخدم المعلومات</h2>
+      <ul>
+        <li>إنشاء حسابك وتسجيل الدخول إليه</li>
+        <li>حفظ بياناتك وعرضها داخل التطبيق</li>
+        <li>تنفيذ المزامنة والنسخ الاحتياطي عند توفرها</li>
+        <li>تحسين الأداء وتجربة الاستخدام</li>
+        <li>حماية الحساب والحد من سوء الاستخدام</li>
+        <li>التواصل معك عند الحاجة للدعم أو الرد على الاستفسارات</li>
+      </ul>
+    </section>
 
-    <h2>كيف نستخدم المعلومات</h2>
-    <p>
-        نستخدم البيانات لتحسين تجربة المستخدم وتوفير خدمات إدارة الديون داخل التطبيق.
-    </p>
+    <section class="card">
+      <h2>4) مشاركة البيانات</h2>
+      <p>
+        نحن لا نبيع بياناتك الشخصية لأي طرف ثالث.
+      </p>
+      <p>
+        قد تتم معالجة بعض البيانات عبر مزودي خدمات تقنيين ضروريين لتشغيل التطبيق، مثل خدمات المصادقة أو التخزين السحابي أو المزامنة، وذلك فقط بقدر ما يلزم لتقديم الخدمة.
+      </p>
+    </section>
 
-    <h2>حماية البيانات</h2>
-    <p>
-        نحن نستخدم وسائل حماية متقدمة لضمان عدم وصول أي طرف غير مصرح له إلى بياناتك.
-    </p>
+    <section class="card">
+      <h2>5) خدمات الطرف الثالث</h2>
+      <p>
+        قد يستخدم التطبيق خدمات خارجية لازمة لتشغيل بعض الوظائف، مثل تخزين البيانات أو إدارة الحسابات أو خدمات البنية السحابية.
+      </p>
+      <p>
+        عند استخدام هذه الخدمات، قد تتم معالجة بعض البيانات وفق سياسات تلك الخدمات وبالقدر اللازم لتشغيل التطبيق.
+      </p>
+    </section>
 
-    <h2>مشاركة البيانات</h2>
-    <p>
-        نحن لا نبيع أو نشارك بياناتك مع أي طرف ثالث.
-    </p>
+    <section class="card">
+      <h2>6) الأذونات</h2>
+      <p>قد يطلب التطبيق بعض الأذونات بحسب المزايا المستخدمة، مثل:</p>
+      <ul>
+        <li>الاتصال بالإنترنت</li>
+        <li>الوصول إلى حالة الشبكة</li>
+        <li>الموقع الجغرافي إذا كانت هناك ميزة تعتمد على الخرائط أو تحديد الموقع</li>
+      </ul>
+      <p class="muted">
+        لا يتم طلب أي إذن إلا إذا كان مرتبطاً بوظيفة فعلية داخل التطبيق.
+      </p>
+    </section>
 
-    <h2>التعديلات</h2>
-    <p>
-        قد نقوم بتحديث سياسة الخصوصية من وقت لآخر.
-    </p>
+    <section class="card">
+      <h2>7) حماية البيانات</h2>
+      <p>
+        نعمل على اتخاذ إجراءات مناسبة لحماية البيانات من الوصول غير المصرح به أو التعديل أو الفقدان أو الاستخدام غير المشروع.
+      </p>
+      <p>
+        ومع ذلك، لا توجد وسيلة نقل أو تخزين إلكتروني مضمونة بنسبة 100% بشكل مطلق.
+      </p>
+    </section>
 
-    <h2>التواصل معنا</h2>
-    <p>
-        إذا كان لديك أي استفسار، يمكنك التواصل معنا عبر البريد الإلكتروني:
-        <br><strong>your@email.com</strong>
-    </p>
+    <section class="card">
+      <h2>8) الاحتفاظ بالبيانات</h2>
+      <p>
+        نحتفظ بالبيانات طالما كانت مطلوبة لتقديم الخدمة أو طالما احتفظ المستخدم بحسابه وبياناته داخل التطبيق، ما لم يتطلب القانون خلاف ذلك.
+      </p>
+      <p>
+        عند طلب حذف الحساب أو حذف البيانات، سنعمل على إزالة البيانات المرتبطة بالحساب خلال مدة معقولة، ما لم تكن هناك حاجة قانونية أو تشغيلية للاحتفاظ بجزء منها لفترة محدودة.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>9) حذف الحساب والبيانات</h2>
+      <div class="highlight">
+        <p>
+          إذا كنت ترغب في طلب حذف حسابك أو بياناتك المرتبطة بالتطبيق، يمكنك التواصل معنا عبر البريد الإلكتروني التالي:
+        </p>
+        <div class="contact-box">
+          <strong>minovaiq@gmail.com</strong>
+          <br />
+          <a class="button" href="mailto:minovaiq@gmail.com?subject=طلب حذف الحساب والبيانات - Minova">
+            طلب حذف الحساب والبيانات
+          </a>
+        </div>
+        <p class="muted">
+          يرجى إرسال الطلب من البريد المرتبط بالحساب إن أمكن، لتسهيل التحقق من الملكية ومعالجة الطلب.
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>10) خصوصية الأطفال</h2>
+      <p>
+        التطبيق غير موجه للأطفال بشكل خاص، ولا نجمع عن قصد بيانات شخصية من الأطفال دون السن الذي تسمح به القوانين المحلية.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>11) التعديلات على سياسة الخصوصية</h2>
+      <p>
+        قد نقوم بتحديث هذه السياسة من وقت لآخر. وعند إجراء تغييرات مهمة، سيتم تحديث تاريخ آخر تعديل في أعلى الصفحة.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>12) التواصل معنا</h2>
+      <p>
+        إذا كان لديك أي سؤال أو استفسار بخصوص سياسة الخصوصية أو طريقة التعامل مع البيانات، يمكنك التواصل معنا عبر:
+      </p>
+      <div class="contact-box">
+        <strong>البريد الإلكتروني:</strong>
+        <br />
+        minovaiq@gmail.com
+      </div>
+    </section>
 
     <div class="footer">
-        © 2026 Minova
+      © 2026 Minova. جميع الحقوق محفوظة.
     </div>
-
-</div>
-
+  </div>
 </body>
 </html>
